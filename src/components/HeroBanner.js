@@ -21,9 +21,12 @@ const HeroBanner = () => {
           <Button
             variant='contained'
             sx={{
-              backgroundColor: '#ff940a', padding: '10px' // Set the background color here
-            }}
-          >
+                backgroundColor: '#ff940a', // Set the background color here
+                '&:hover': {
+                  backgroundColor: '#686868', // Set the hover background color here
+                },
+              }}
+            >
             Explore Exercises
           </Button>
           <Typography fontWeight={600} color='#ff940a' sx={{ opacity: 0.1, display: {lg : 'block', xs: 'none'}}} fontSize='200px'>
